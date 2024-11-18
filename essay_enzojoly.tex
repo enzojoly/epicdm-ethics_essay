@@ -110,34 +110,8 @@ This should be verified and assured with rigorous testing and regular audits, en
 
 The ACM Code proposes that "all people are stakeholders in computing" \textit{\parencite[p. 1]{ACM2024}}, alluding that the enhancement of student wellbeing and academic success is not merely a nice gesture, but necessary for the betterment of society, assuming compliant (and considerate) execution.
 
-    %\item Regularly assessing the broader impact of Alice on the educational ecosystem.
-    %\item Designing features that promote digital literacy and responsible AI interaction among students.
-
-%\subsubsection*{Avoid Harm}
-%The ACM emphasises that computing professionals should "avoid harm to others" \textit{\parencite[p. 1]{ACM2024}}. In the context of 'Alice', this principle demands:
-
-%\begin{itemize}
-%    \item Implementing robust safeguards against potential psychological harm from AI interactions.
-%    \item Establishing clear escalation protocols for situations where Alice detects potential self-harm or other serious issues.
-%    \item Regular risk assessments to identify and mitigate potential negative consequences of the chatbot's use.
-%\end{itemize}
 
 Alice should be constructed with accessibility in mind, "[fostering] fair participation of all people, including those of underrepresented groups" \textit{\parencite[p. 2]{ACM2024}}.
-
-%\begin{itemize}
-%    \item Designing Alice's interface and interactions to be accessible to students with disabilities.
-%    \item Ensuring that the chatbot's language models and knowledge base represent diverse perspectives and experiences.
-%    \item Implementing features that promote equal access to educational resources and opportunities through Alice's recommendations.
-%\end{itemize}
-
-
-%\subsubsection*{Duty to Relevant Authority}
-
-%\begin{itemize}
-%    \item We must balance South Star Academy's requirements with ethical considerations and legal obligations.
-%    \item Clear protocols must be established for situations where Alice's judgements might conflict with school policies.
-%    \item Regular audits should be conducted to ensure Alice's actions align with both the school's requirements and broader ethical standards.
-%\end{itemize}
 
 \subsubsection*{Caveats to Information Processing}
 
@@ -149,7 +123,7 @@ BCS specifies duty to "due... diligence in accordance with the Relevant Authorit
 This should be at the discretion of human moderators by way of a sophisticated content-flagging system and anonymity secured by multiple key-holders to ensure consensus for de-anonymisation.
 Students may be more comfortable anonymously, so this process of de-anonymising must be abuse-proof to ensure trust remains strong.
 All decision-making processes must prioritise students foremost, with the necessary privacy precautions in place to protect student data alongside regular monitoring of the chatbot's holistic impact on the educational environment.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % Code of practice      250
 
@@ -173,14 +147,14 @@ In-depth representation for truly ethical and compliant practice are appended in
     %\item Incorporating ethical considerations into development processes
 %\end{itemize}
 
-\subsection{Data Ethics}
+\subsection{Ethical Data Governance}
 Any implementation of 'Alice' would raise significant privacy concerns regarding the collection, storage, and use of student data \textit{\parencite[pp. 366-370]{Annus2023}}.
 Since proper compliance is in the best interest of student wellbeing and vice versa, all-encompassing singular actions, policies, and processes have the potential to satisfy all stakeholders simulataneously.
 
 \subsubsection{GDPR/Regulatory Compliance}
 From design through to deployment continously for any collection of data, as well as full transparency in its use of data, and clarity regarding what it is collecting data to be used for, TechSoft must define the nature of its policies, processes, and practice. It is also imperative that TechSoft safeguard against any third-parties from gaining access to data with security best practices. Schools are in position to safeguard student data, appreciating this perspective is essential for TechSoft engineers. For more information, see Appendix \ref{appendix:b}. Additionally, record a Data Protection Impact Assessment (DPIA) (template provided in Appendix \ref{appendix:a}).
 
-\subsubsection{Data Governance and Security}
+\subsubsection{Data Security}
 Privacy by design as an ethos enabling strong governance and security measures including:
 
 \subsubsection*{Authentication and Authorisation}
@@ -189,51 +163,55 @@ OAuth 2.0 and OpenID Connect for Single Sign-On (SSO) and Role-Based Access Cont
 \subsubsection*{Data Encryption}
 Robust data encryption methods \textit{\parencite[pp. 100-150]{Stallings2023}}, AES-256 for data at rest and TLS 1.3 for data in transit.
 
-
-%how can techsoft do this ethically
-
-%%ANONYMISATION OF STUDENTS + DATA
 \subsubsection{Data Anonymisation}
 K-anonymity can be employed for protecting student identities \textit{\parencite[pp. 75-100]{ElEmamArbuckle2023}}, and the implementation of differential privacy for aggregate data analysis, anonymising students entirely into statistics beneficial for upgrading and improving the chatbot, and alleviating the burden of at-risk data unnecessary for development purposes.
 
 \subsubsection{Data Minimisation}
-Data collected must be absolutely necessary and audited regularly to ensure all stored information is still relevant \textit{\parencite{A29WP2018}}.
-
-\subsubsection*{Privacy-Preserving UX Patterns}
-Implementing privacy-preserving UX patterns \textit{\parencite[pp. 50-100]{Hartzog2023}} includes:
-\begin{itemize}
-    \item Making privacy settings easily accessible and understandable
-    \item Ensuring data usage transparency in the user interface
-\end{itemize}
-
+Data "audited regularly to ensure all stored information is still relevant" \textit{\parencite{A29WP2018}}, implementing "privacy-preserving UX patterns" \textit{\parencite[pp. 50-100]{Hartzog2023}}, making privacy settings easily accessible and understandable.
 \subsubsection*{Informed Consent}
 Information about data usage must be clear, with opt-in mechanisms for non-essential features. Age-appropriate consent must be obtained from students (parental consent for students under the age of 13 \textit{\parencite{FTC2023}}).
 
-\subsection{Algorithmic Ethics}
-Explicit labelling of 'Alice' as an AI system \textit{\parencite{IEEE2023}}, including information on the capabilities and management of the chatbot itself. Elucidation of empirical evidence rooting from the consequences of algorithmic configuration can benefit not only developers, but users, and by extension society en masse.
+\newpage
+\subsection{AI Ethics Principles}
+Adhering to established AI ethics principles \textit{\parencite{EC2024}}.
 
-\subsubsection{AI Ethics Principles}
-Adhering to established AI ethics principles \textit{\parencite{EC2024}} is essential:
-\begin{itemize}
-    \item Human agency and oversight
-    \item Technical robustness and safety
-    \item Privacy and data governance
-    \item Transparency
-    \item Diversity, non-discrimination, and fairness
-    \item Societal and environmental well-being
-    \item Accountability
-\end{itemize}
+    %Human agency and oversight
+    %Technical robustness and safety
+    %Privacy and data governance
+    %Transparency
+    %Diversity, non-discrimination, and fairness
+    %Societal and environmental well-being
+    %Accountability
 
-%%STARTPOINT
+\subsubsection{Ethical Algorithm Design}
+Explicit labelling of 'Alice' as an AI system \textit{\parencite{IEEE2023}}, including information on the capabilities and management of the chatbot itself. Elucidation of empirical evidence rooting from the consequences of algorithmic configuration choices can benefit not only developers, but users, and by extension society en masse.
+
+\subsubsection{Human Agency and Oversight}
+
+Setting "clear boundaries between AI support and human intervention" \textit{\parencite{APA2024}}by defining thresholds for transitioning between human support and AI. Staff training on effectively working alongside AI systems for smooth integration of technology. This will also enable contextual enquiry to better map student support scenarios, conducting user research \textit{\parencite[pp. 50-100]{Goodman2023}}, and human-in-the-loop dialogue optimisation \textit{\parencite[pp. 30-60]{Vaughan2024}}. Evaluations can be crowdsourced for diverse perspectives.
+
+%%TEST SAMPLE GROUPS OF STUDENTS
+\subsubsection*{Iterative Design Process}
+Implementing an iterative design process \textit{\parencite[pp. 30-60]{HoltzblattBeyer2024}} will aid in refactoring and improving an adaptable system to student needs, and usability testing with representative student groups will ensure that these needs are measured and met.
+
+\subsubsection*{Ethical Review Process}
+Implementing an ethical review process \textit{\parencite{FloridiCowls2023}} includes periodic assessments of chatbot decisions for bias, and alignment checks with established ethical guidelines.
+
+\subsubsection{Technical Safety}
+Implementing safeguards against harmful or inappropriate chatbot responses \textit{\parencite[p. e11510]{Bickmore2021}}, safeguarding against jailbreaking and exploitation by students to ensure integrity of all responses. Content filtering and trigger warning systems as well as established escalation protocols for crisis situations. Natural and effective chatbot interactions, establishing tone and personality \textit{\parencite[pp. 20-50]{Bradbury2024}}, maintaining a consistent voice aligned with an educational context, ensuring age-appropriate content.
+
 \subsubsection{Transparency}
-Implementing explainable AI techniques to interpret chatbot decisions \textit{\parencite[pp. 82-115]{Arrieta2022}} is recommended:
+ "Explainable AI techniques to interpret chatbot decisions" \textit{\parencite[pp. 82-115]{Arrieta2022}} by way of interpretable machine learning models and provision of rationale, with respect to design recommendations in the software lifecycle.
+
+
+ \subsubsection{Fairness-Aware Machine Learning}
+Implementing fairness-aware machine learning techniques \textit{\parencite{Barocas2021}} is crucial:
 \begin{itemize}
-    \item Use of interpretable machine learning models
-    \item Providing rationale for chatbot recommendations and actions
+    \item Utilising algorithmic fairness metrics (e.g., demographic parity, equal opportunity)
+    \item Applying bias mitigation strategies in model training and deployment
 \end{itemize}
 
-\subsubsection{Bias Testing}
-
+\subsubsection*{Bias Testing}
 Mitigating bias in the chatbot's algorithms is essential for equitable student support:
 Regular testing for biases in chatbot responses \textit{\parencite{ACMFAccT2024}} should include:
 \begin{itemize}
@@ -241,20 +219,7 @@ Regular testing for biases in chatbot responses \textit{\parencite{ACMFAccT2024}
     \item Implementing human-in-the-loop evaluation for sensitive topics
 \end{itemize}
 
-\subsubsection{Fairness-Aware Machine Learning}
-Implementing fairness-aware machine learning techniques \textit{\parencite{Barocas2021}} is crucial:
-\begin{itemize}
-    \item Utilising algorithmic fairness metrics (e.g., demographic parity, equal opportunity)
-    \item Applying bias mitigation strategies in model training and deployment
-\end{itemize}
-\subsubsection*{Ethical Review Process}
-Implementing an ethical review process \textit{\parencite{FloridiCowls2023}} includes:
-\begin{itemize}
-    \item Periodic assessments of chatbot decisions for bias
-    \item Alignment checks with established ethical guidelines
-\end{itemize}
-
-\subsubsection{Diverse Training Data}
+\subsubsection*{Diverse Training Data}
 Using diverse training data to prevent demographic biases \textit{\parencite[pp. 1-35]{Mehrabi2023}} involves:
 \begin{itemize}
     \item Including diverse student profiles in training datasets
@@ -269,15 +234,16 @@ Conducting regular audits of the chatbot's decision-making processes \textit{\pa
     \item Third-party audits to ensure adherence to ethical guidelines
 \end{itemize}
 
+\newpage
+
 \subsection{User Experience and Accessibility}
 \subsubsection{User-Centred Design}
 Implementing a design process focussed on student needs:
 
 
 \subsubsection{Accessibility Standards}
-Ensuring the chatbot is usable by all students:
+Ensuring the chatbot is inclusive of all students:
 
-\subsubsection{Web Content Accessibility Guidelines (WCAG) 2.2}
 Adhering to WCAG 2.2 \textit{\parencite{W3C2023}} includes:
 \begin{itemize}
     \item Ensuring content is perceivable, operable, understandable, and robust
@@ -294,20 +260,9 @@ Adhering to WCAG 2.2 \textit{\parencite{W3C2023}} includes:
 \subsubsection*{Cognitive Accessibility Considerations}
 Addressing cognitive accessibility \textit{\parencite[pp. 1-10]{Yesilada2023}} includes:
 \begin{itemize}
-    \item Using clear and simple language
+    \item Using clear and simple language, multi-lingual options \textit{\parencite[pp. 50-100]{AnastasiouSchaler2023}}.
     \item Implementing consistent layout and interaction patterns
 \end{itemize}
-
-\subsubsection*{Inclusive Design}
-Addressing diverse student needs:
-
-%\subsubsection{Multilingual Support}
-%Implementing multilingual support \textit{\parencite[pp. 50-100]{AnastasiouSchaler2023}} involves:
-%\begin{itemize}
-    %\item Integrating machine translation services
-    %\item Ensuring culturally appropriate responses and idioms
-%\end{itemize}
-
 
 \subsubsection*{Adaptable User Interface}
 Creating an adaptable user interface \textit{\parencite[pp. 20-50]{HarperYesilada2024}} includes:
@@ -330,45 +285,6 @@ Designing touch-friendly interfaces \textit{\parencite[pp. 80-120]{HooberBerkman
     \item Implementing gesture-based interactions where appropriate
 \end{itemize}
 
-\subsubsection{Conversational Design}
-Creating natural and effective chatbot interactions:
-
-
-%% TONE AND PERSONALITY AGE APPROPRIATE
-\subsubsection*{Tone and Personality}
-Establishing tone and personality \textit{\parencite[pp. 20-50]{Bradbury2024}} involves:
-\begin{itemize}
-    \item Maintaining a consistent voice aligned with educational context
-    \item Using age-appropriate language and responses
-\end{itemize}
-
-
-%%JAILBREAKING AI for yungns
-
-\subsubsection*{Vulnerability Management}
-Managing vulnerabilities \textit{\parencite[pp. 150-200]{StuttardPinto2023}} includes:
-\begin{itemize}
-    \item Conducting regular automated vulnerability scans
-    \item Implementing penetration testing of IT systems
-\end{itemize}
-
-
-%%INTERVIEW STUDENT SUPPORT STAFF
-\subsubsection{User Research Methodologies}
-Conducting user research \textit{\parencite[pp. 50-100]{Goodman2023}} involves:
-\begin{itemize}
-    \item Utilising contextual inquiry to understand student support scenarios
-    \item Developing personas representing diverse student populations
-\end{itemize}
-
-%%TEST SAMPLE GROUPS OF STUDENTS
-\subsubsection*{Iterative Design Process}
-Implementing an iterative design process \textit{\parencite[pp. 30-60]{HoltzblattBeyer2024}} includes:
-\begin{itemize}
-    \item Using rapid prototyping with tools like Figma or Sketch
-    \item Conducting usability testing with representative student groups
-\end{itemize}
-
 
 \subsubsection{User Feedback Integration}
 Incorporating student and staff input:
@@ -387,7 +303,7 @@ Implementing in-app feedback mechanisms \textit{\parencite[pp. 100-150]{TullisAl
     \item Offering easy-to-use bug reporting tools
 \end{itemize}
 
-\subsection{Ethical Design Patterns}
+\subsubsection{Ethical Design Patterns}
 %%DARK PATTERNS OPT-OUT
 \subsubsection{Dark Pattern Avoidance}
 Avoiding dark patterns \textit{\parencite{Brignull2023}} includes:
@@ -417,51 +333,7 @@ Mitigating the risk of over-reliance on AI for emotional support \textit{\parenc
     \item Integrating the chatbot with pre-existing human counselling services and enabling direct connections to appropriate resources and non-AI support
 \end{itemize}
 
-\subsubsection*{Safeguards Against Harmful Responses}
-Implementing safeguards against harmful or inappropriate chatbot responses \textit{\parencite[p. e11510]{Bickmore2021}} includes:
-\begin{itemize}
-    \item Developing content filtering and trigger warning systems
-    \item Establishing escalation protocols for crisis situations
-\end{itemize}
-
-%\subsubsection{Emotional Design Principles}
-%Applying emotional design principles \textit{\parencite[pp. 10-40]{Norman2023}} involves:
-%\begin{itemize}
-    %\item Designing for positive emotional responses
-    %\item Incorporating empathy in chatbot interactions
-%\end{itemize}
-
-%%DECIDED BY ETHICS REVIEW BOARD
-\subsubsection*{Clear Boundaries}
-Setting clear boundaries between AI support and human intervention \textit{\parencite{APA2024}} requires:
-\begin{itemize}
-    \item Defining thresholds for transitioning from AI to human support
-    \item Training staff on effectively working alongside AI systems
-\end{itemize}
-
-\subsubsection{Ethical Framework and Governance}
-Establishing a robust ethical framework is crucial for the responsible development and deployment of 'Alice':
-
-\subsubsection*{Ethics Review Board}
-Forming an ethics review board \textit{\parencite{UNESCO2023}} should involve:
-\begin{itemize}
-    \item Ensuring multi-stakeholder representation (educators, students, ethicists, technologists)
-    \item Conducting regular reviews of chatbot performance and ethical implications
-\end{itemize}
-
-
-
-%\subsubsection*{Intrusion Detection and Prevention}
-%Deploying intrusion detection and prevention systems \textit{\parencite[pp. 200-250]{StallingsBrown2024}} involves:
-%\begin{itemize}
-    %\item Implementing network-based IDS/IPS systems
-    %\item Utilising host-based security with endpoint detection and response (EDR)
-%\end{itemize}
-
-
-
-%%CUSTOM TRAINING OR DOMAIN-SPECIFIC SUPPORT
-
+\newpage
 \subsection{Monitoring, Evaluation, and Continuous Improvement}
 \subsubsection{AI and Machine Learning Architecture}
 
@@ -504,12 +376,6 @@ Implementing usage analytics \textit{\parencite[pp. 50-100]{Beasley2023}} includ
     \item Analysing conversation flows and completion rates
 \end{itemize}
 
-%\subsubsection*{Natural Language Understanding (NLU) Analysis}
-%Conducting NLU analysis \textit{\parencite[pp. 200-250]{JurafskyMartin2024}} involves:
-%\begin{itemize}
-    %\item Assessing intent classification accuracy
-    %\item Evaluating entity recognition performance
-%\end{itemize}
 
 \subsubsection*{Sentiment Analysis}
 Performing sentiment analysis \textit{\parencite[pp. 50-100]{Liu2023}} includes:
@@ -519,70 +385,7 @@ Performing sentiment analysis \textit{\parencite[pp. 50-100]{Liu2023}} includes:
 \end{itemize}
 
 \subsubsection{Continuous Learning and Adaptation}
-%Enhancing chatbot performance over time:
-
-\subsubsection*{Human-in-the-Loop Dialogue Optimisation}
-Optimising dialogues \textit{\parencite[pp. 50-100]{Gao2023}} involves:
-\begin{itemize}
-    \item Refining conversation flows based on user feedback
-    \item Dynamically adjusting response strategies
-\end{itemize}
-
-Conducting human-in-the-loop evaluation \textit{\parencite[pp. 30-60]{Vaughan2024}} involves:
-\begin{itemize}
-    \item Regular audits of chatbot conversations by education experts
-    \item Crowdsourced evaluations for diverse perspectives
-\end{itemize}
-
-%%STUDENT SUPPORT IMPACT ASSESSMENT
-
-%\subsection{Impact Assessment}
-%Evaluating the chatbot's effect on student support:
-%
-%\subsubsection*{Educational Outcomes Analysis}
-%Analysing educational outcomes \textit{\parencite{Sclater2023}} includes:
-%\begin{itemize}
-    %\item Conducting correlation studies between chatbot usage and academic performance
-    %\item Performing longitudinal studies on student retention and progression
-%\end{itemize}
-
-
-%%STRESS LEVELS WELLBEING INDICATORS
-
-%\subsubsection*{Wellbeing Indicators}
-%Assessing well-being indicators \textit{\parencite[pp. 100-150]{Diener2024}} involves:
-%\begin{itemize}
-    %\item Surveying student stress levels and coping mechanisms
-    %\item Analysing the chatbot's role in early intervention for mental health issues
-%\end{itemize}
-
-%\subsubsection*{Resource Utilisation Metrics}
-%Measuring resource utilisation \textit{\parencite{Heick2023}} includes:
-%\begin{itemize}
-    %\item Tracking changes in staff workload and time allocation
-    %\item Assessing efficiency gains in student support processes
-%\end{itemize}
-
-%\subsection{Security and Privacy Audits}
-%Regularly assessing and improving data protection:
-
-%\subsubsection*{Penetration Testing}
-%Conducting penetration testing \textit{\parencite[pp. 200-250]{StuttardPinto2023}} involves:
-%\begin{itemize}
-%    \item Scheduling security assessments by external experts
-%    \item Implementing continuous automated vulnerability scanning
-%\end{itemize}
-
-
-%\subsection{Continuous Professional Development}
-%Keeping the development team updated:
-
-%\subsubsection*{Industry Conference Participation}
-%Encouraging industry conference participation \textit{\parencite{IEEE2024}} includes:
-%\begin{itemize}
-%    \item Attending and presenting at relevant academic and industry events
-%    \item Networking with experts in educational technology and AI ethics
-%\end{itemize}
+Enhancing chatbot performance over time:
 
 %%ESTABLISH PARTNERSHIPS WITH UNIVERSITIES
 \subsubsection*{Research Collaboration}
@@ -592,6 +395,7 @@ Fostering research collaboration \textit{\parencite[pp. 50-100]{Dillenbourg2023}
     \item Publishing findings to contribute to the broader field
 \end{itemize}
 
+\newpage
 \section{Reflection and Recommendations}
 
 Key recommendations for the 'Alice' project:
