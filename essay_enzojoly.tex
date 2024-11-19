@@ -47,7 +47,7 @@
 
 Module Title: UFCFB5-15-3 | Ethical and Professional Issues in Computing and Digital Media
 
-Word Count: 2179
+Word Count:
 
 \vspace{3em}
 \hrule
@@ -128,53 +128,53 @@ All decision-making processes must prioritise students foremost, with the necess
 In-depth representation for truly ethical and compliant practice are appended in Appendix \ref{appendix:b} (relevant definitions with respect to implications for `Alice'), and not the main body of this report, for brevity's sake.
 
 \subsection{Ethical Data Governance}
-Any implementation of `Alice' would raise significant privacy concerns regarding the collection, storage, and use of student data \textit{\parencite[pp. 366-370]{Annus2023}}.
-Since proper compliance is in the best interest of student wellbeing and vice versa, all-encompassing singular actions, policies, and processes have the potential to satisfy the needs of all stakeholders simultaneously. Proper management of data involves:
+Any implementation of `Alice' would raise significant privacy concerns regarding the collection, storage, and use of student data \textit{\parencite[pp. 366-370]{Annus2023}}. In the best interest of both students and the law, all-encompassing singular actions, policies, and processes have the potential to satisfy the needs of all stakeholders simultaneously.
+Proper management of data involves:
 
 \subsubsection{GDPR/Regulatory Compliance}
-From design through to deployment continously for any collection of data, as well as full transparency in its use of data, and clarity regarding what it is collecting data to be used for, TechSoft must define the nature of its policies, processes, and practice. It is also imperative that TechSoft safeguard against any third-parties from gaining access to data with security best practices. Schools are in position to safeguard student data, appreciating this perspective is essential for TechSoft engineers. For more information, see Appendix \ref{appendix:b}. Additionally, record a Data Protection Impact Assessment and keep it up to date (DPIA) (template provided in Appendix \ref{appendix:a}).
+From design through to deployment continously for any collection of data, as well as full transparency in its use of data, and clarity regarding what it is collecting data to be used for, TechSoft must define the nature of its policies, processes, and practice.
+It is also imperative that TechSoft safeguard against any third-parties from gaining access to data with security best practices.
+Schools are in position to safeguard student data, appreciating this perspective is essential for TechSoft engineers.
+For more information, see Appendix \ref{appendix:b}.
+Additionally, record a Data Protection Impact Assessment (DPIA) and keep it up to date (template provided in Appendix \ref{appendix:a}).
 
 \subsubsection{Data Security}
-Privacy by design as an ethos enabling strong governance and security measures including:
-
-\subsubsection*{Authentication and Authorisation}
+Privacy by design as an ethos enabling strong governance and security measures;
 OAuth 2.0 and OpenID Connect for Single Sign-On (SSO) and Role-Based Access Control (RBAC) for fine-tuning permissions \textit{\parencite[pp. 80-120]{Josuttis2023}}.
-
-\subsubsection*{Data Encryption}
-Robust data encryption methods \textit{\parencite[pp. 100-150]{Stallings2023}}, AES-256 for data at rest and TLS 1.3 for data in transit.
+Data encryption \textit{\parencite[pp. 100-150]{Stallings2023}}, AES-256 for data at rest and TLS 1.3 for data in transit.
 
 \subsubsection{Data Anonymisation}
-K-anonymity can be employed for protecting student identities \textit{\parencite[pp. 75-100]{ElEmamArbuckle2023}}, and the implementation of differential privacy for aggregate data analysis, anonymising students entirely into statistics beneficial for upgrading and improving the chatbot, and alleviating the burden of at-risk data unnecessary for development purposes.
+K-anonymity employed for protecting student identities \textit{\parencite[pp. 75-100]{ElEmamArbuckle2023}}, and the implementation of differential privacy for aggregate data analysis, anonymising students entirely into statistics beneficial for upgrading and improving the chatbot, and alleviating the burden of at-risk data unnecessary for development purposes.
 
 \subsubsection{Data Minimisation}
 Data "audited regularly to ensure all stored information is still relevant" \textit{\parencite{A29WP2018}}, implementing "privacy-preserving UX patterns" \textit{\parencite[pp. 50-100]{Hartzog2023}}, making privacy settings easily accessible and understandable.
 
 \subsubsection*{Informed Consent}
-Information about data usage must be clear, with opt-in mechanisms for non-essential features. Age-appropriate consent must be obtained from students (parental consent for students under the age of 13 \textit{\parencite{FTC2023}}).
+Information about data usage must be clear, with opt-in mechanisms for non-essential features.
+Age-appropriate consent must be obtained from students (parental consent for students under the age of 13 \textit{\parencite{FTC2023}}).
 
 \subsection{AI Ethics Principles}
 Principled practice is a must, adhering to established AI ethics principles \textit{\parencite{EC2024}}:
 
-    %Human agency and oversight
-    %Technical robustness and safety
-    %Privacy and data governance
-    %Transparency
-    %Diversity, non-discrimination, and fairness
-    %Societal and environmental well-being
-    %Accountability
-
 \subsubsection{Ethical Algorithm Design}
-Explicit labelling of `Alice' as an AI system \textit{\parencite{IEEE2023}}, including information on the capabilities and management of the chatbot itself. Elucidation of empirical evidence rooting from the consequences of algorithmic configuration choices can benefit not only developers, but users, and by extension society en masse.
+Explicit labelling of `Alice' as an AI system \textit{\parencite{IEEE2023}}, prioritising the elucidation of users.
+Understanding algorithmic configuration choices and their consequences can benefit not only developers, but users, and by extension society en masse.
 
 \subsubsection{Human Agency and Oversight}
 
-Setting "clear boundaries between AI support and human intervention" \textit{\parencite{APA2024}}by defining thresholds for transitioning between human support and AI. Staff training on effectively working alongside AI systems for smooth integration of technology. This will also enable contextual enquiry to better map student support scenarios, conducting user research \textit{\parencite[pp. 50-100]{Goodman2023}}, and human-in-the-loop dialogue optimisation \textit{\parencite[pp. 30-60]{Vaughan2024}}. Evaluations can be crowdsourced for diverse perspectives.
+Setting "clear boundaries between AI support and human intervention" \textit{\parencite{APA2024}} by defining thresholds for transitioning between human support and AI.
+Contextual enquiry of staff to better map support scenarios by conducting user research \textit{\parencite[pp. 50-100]{Goodman2023}}, alongside human-in-the-loop dialogue optimisation \textit{\parencite[pp. 30-60]{Vaughan2024}}.
+Evaluations can be crowdsourced for diverse perspectives.
 
 \subsubsection{Iterative Design Process}
-An iterative strategy \textit{\parencite[pp. 30-60]{HoltzblattBeyer2024}} will aid in the formation of an adaptable system for frequent ethical review \textit{\parencite{FloridiCowls2023}}. Periodic assessment of chatbot bias, plus alignment against ethical benchmarks. Usability testing with representative student groups ensures these needs are measured and met on a regular basis.
+An iterative strategy \textit{\parencite[pp. 30-60]{HoltzblattBeyer2024}} will aid in the formation of an adaptable system for frequent ethical review \textit{\parencite{FloridiCowls2023}}.
+Periodic assessment of chatbot bias, plus alignment against ethical benchmarks.
+Usability testing with representative student groups ensures these needs are measured and met on a regular basis.
 
-\subsubsection{Technical Safety}
-Implementing safeguards against harmful or inappropriate chatbot responses \textit{\parencite[p. e11510]{Bickmore2021}}, safeguarding against jailbreaking and exploitation by students to ensure integrity of all responses. Content-filtering and trigger warning systems in effect, with established escalation protocols for crisis situations. Natural and effective chatbot interactions, establishing tone and personality \textit{\parencite[pp. 20-50]{Bradbury2024}}, maintaining a consistent voice aligned with an educational context, ensuring age-appropriate content.
+\subsubsection{Disinformation and Technical Safety}
+Content-filtering in effect, with established escalation protocols for disinformation or harmful content.
+Natural and effective chatbot interactions, establishing tone and personality \textit{\parencite[pp. 20-50]{Bradbury2024}}, maintaining a consistent voice aligned with an educational context, ensuring age-appropriate content.
+Harmful or inappropriate chatbot responses \textit{\parencite[p. e11510]{Bickmore2021}} accounted for.
 
 \subsubsection{Transparency}
  "Explainable AI techniques to interpret chatbot decisions" \textit{\parencite[pp. 82-115]{Arrieta2022}} thanks to interpretable machine learning models and provision of rationale, with respect to design recommendations in the software lifecycle.
@@ -185,29 +185,34 @@ Implementing safeguards against harmful or inappropriate chatbot responses \text
     TechSoft must subsume a mindset for mitigation: frequent bias testing, essential for equitable support.
 Regular bias testing \textit{\parencite{ACMFAccT2024}} including the employment of automated bias-detection tools, in tandem with supervised evaluation.
 
-Diverse training data, to prevent demographic biases \textit{\parencite[pp. 1-35]{Mehrabi2023}} is important. Diverse student profiles in training data ensure an inclusive model representative of the entire student demographic.
+Diverse training data, to prevent demographic biases \textit{\parencite[pp. 1-35]{Mehrabi2023}} is important.
+Diverse student profiles in training data ensure an inclusive model representative of the entire student demographic.
 
 
 \subsection{Ethical UX Design Patterns}
 TechSoft must commit to a design process focussed on student needs:
 
 \subsubsection{Accessibility Standards}
-Adhering to WCAG 2.2 \textit{\parencite{W3C2023}}, making content to be perceivable, operable, understandable, and robust, considerate of user interactions.
+Adhering to WCAG 2.2 \textit{\parencite{W3C2023}}, content can be perceivable, operable, understandable, and considerate of an array of user interaction.
 
-Addressing cognitive accessibility \textit{\parencite[pp. 1-10]{Yesilada2023}} with clear and simple language, and multi-lingual options \textit{\parencite[pp. 50-100]{AnastasiouSchaler2023}} alongside consistent layout and interaction patterns.
+Cognitive accessibility \textit{\parencite[pp. 1-10]{Yesilada2023}} with clear and simple language, alongside multi-lingual options \textit{\parencite[pp. 50-100]{AnastasiouSchaler2023}} provides consistent layout and interaction patterns.
 
 \subsubsection{User-Centred Design}
-Creating an adaptable user interface \textit{\parencite[pp. 20-50]{HarperYesilada2024}}, offering customisable font sizes and colour contrasts and supporting a range of interfacing methods (text, voice, video, gestures), providing options to reduce visual clutter and addressing neurodiversity \textit{\parencite[pp. 30-60]{Armstrong2023}} and students with special needs.
+An adaptable user interface \textit{\parencite[pp. 20-50]{HarperYesilada2024}}, offering customisable font sizes and colour contrasts supporting a range of input (text, voice, video, gestures), and optionally reducing visual clutter to address neurodiversity \textit{\parencite[pp. 30-60]{Armstrong2023}} will accommodate special needs.
 
 \subsubsection{Dark Pattern Avoidance}
 Dark patterns \textit{\parencite{Brignull2023}} must be avoided.
-Operational transparency including information about `Alice' and data usage, with clear opt-out options for data collection are of utmost importance. Information pertinent to students and their rights must be made crystal clear.
+Operational transparency including information about `Alice' and data usage, with clear opt-out options for data collection are of utmost importance.
+Information pertinent to students and their rights must be made crystal clear.
 
 \subsubsection{Attention Economy Awareness}
-This includes also addressing attention economy concerns \textit{\parencite[pp. 10-30]{Williams2024}}, designing for focussed, purposeful interactions and avoiding addictive design patterns. This is vital in the context of impressionable and susceptible youth and vulnerable persons.
+This includes also addressing attention economy concerns \textit{\parencite[pp. 10-30]{Williams2024}}, designing for focussed, purposeful interactions and avoiding addictive design patterns.
+This is vital in the context of impressionable and susceptible youth and vulnerable persons.
 
 \subsubsection{Psychological Impact}
-AI Support is liable to psychological impacts as well and these must be considered  too. TechSoft must mitigate the risk of over-reliance on AI for emotional support \textit{\parencite[p. 746]{Miner2022}}, clearly communicating AI's role as a supplement to (not replacement for) human support. Pre-existing human counselling services can be integrated facilitating non-AI support roles.
+AI Support is liable to psychological impacts as well and these must be considered  too.
+TechSoft must mitigate the risk of over-reliance on AI for emotional support \textit{\parencite[p. 746]{Miner2022}}, clearly communicating AI's role as a supplement to (not replacement for) human support.
+Pre-existing human counselling services can be integrated facilitating non-AI support roles.
 
 \subsection{Monitoring, Evaluation, and Continuous Improvement}
  "Human-centric AI" should be a key principle.
@@ -223,31 +228,24 @@ Enabling response accuracy and relevance, and task completion rates, to be track
 
 \subsubsection{Usage Analytics}
 Common queries and pain points can be identified with usage analytics \textit{\parencite[pp. 50-100]{Beasley2023}}, analysing conversation flows and quality.
-Sentiment analysis \textit{\parencite[pp. 50-100]{Liu2023}} can be performed analysing emotional tone of student interactions.
+Sentiment analysis \textit{\parencite[pp. 50-100]{Liu2023}} can be performed, analysing emotional tone of student interactions.
 
 \subsubsection*{Research Collaboration}
-    It would be beneficial to foster the academic community, establishing partnerships with universities \textit{\parencite[pp. 50-100]{Dillenbourg2023}} for contribution to research, and ensuring the quality of the service. Findings can also be published to contribute to the broader field.
+    It would be beneficial to foster the academic community, establishing partnerships with universities \textit{\parencite[pp. 50-100]{Dillenbourg2023}} for contribution to research, and ensuring the quality of the service.
+    Findings can also be published to contribute to the broader field.
 
 \end{multicols}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \section{Reflection and Recommendations}
-Throughout the software development lifecycle, `Alice' must abide the core recommendations encapsulated here: "privacy by design" from the foundation, with "human-centric AI" as a guiding principle to instill responsibility for a digital duty of care. Ethos-driven targets should permeate every aspect of its implementation.
-
-`Alice' must also exemplify "educational empowerment" for "cognitive stewardship", all the while maintaining accountability as protocol. Transparency of methods and technology including "mindful monitoring," can ensure TechSoft a model for "responsible innovation" in educational AI and amongst a sensitive and valued ecology of academia.
-
-Ethical eloquence - where compliance, accessibility, and effectiveness converge naturally through thoughtful design requirements and choices. In combination adaptive and continuous evaluation, TechSoft can assure a system that truly serves its mission while protecting student interests.
-
-\vspace {5em}
-My key recommendations for the `Alice' project are as follows:
-\begin{itemize}
-  \item Establish a sensible and proactive ethical framework and governance structure. Data security and data governance is of paramount importance.
-  \item Implement modern AI technology with a focus on inclusive outputs, free from bias.
-  \item Train staff to work effectively alongside AI systems, not in lieu of them.
-  \item Prioritise students, cater to diverse student needs.
-  \item Develop comprehensive monitoring and evaluation systems for continuous improvement
-  \item Ensure continued compliance with legislature.
-  \item Complete and maintain an updated Data Protection Impact Assessment. File and refactor this document according to robust change policy.
-\end{itemize}
+Throughout the software development lifecycle, encapsulated here: "privacy by design" from the foundation, with "human-centric AI" as a guiding principle to instill responsibility and a "mindset for mitigation."
+With ethos-driven targets permeating every aspect of its implementation, `Alice' must also exemplify educational empowerment for cognitive stewardship.Devise training for staff to work effectively alongside AI systems, not in lieu of them, all the while maintaining accountability as protocol.
+Transparency can ensure TechSoft a model for "responsible innovation" in educational AI and amongst a sensitive and valued ecology of academia.
+Compliance, accessibility, and effectiveness will converge naturally through thoughtful design choices to establish a sensible and proactive ethical framework and governance structure.
+In combination with adaptive and continuous evaluation, TechSoft can assure a system that truly serves its mission while protecting student interests.
+Prioritise students. Cater to diverse student needs.
+Ensure continued compliance with legislature.
+Complete and maintain an updated Data Protection Impact Assessment, filing and refactoring it according to a robust change policy.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -384,6 +382,10 @@ My key recommendations for the `Alice' project are as follows:
     \hline
     & & \\
     \hline
+    & & \\
+    \hline
+    & & \\
+    \hline
 \end{longtable}
 
 
@@ -395,7 +397,8 @@ My key recommendations for the `Alice' project are as follows:
     \end{itemize}
 \end{enumerate}
 
-\vspace{4em}
+\vspace{0.5em}
+
 \subsection*{9. Ongoing Monitoring Plan}
 \begin{enumerate}
     \item \textbf{Review Schedule}
