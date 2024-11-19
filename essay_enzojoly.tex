@@ -82,70 +82,48 @@ South Star Academy's proposed student support services chatbot `Alice' will requ
 
 %What can YOU suggest as KEY actions to take to ensure that this project is successful?
 
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Relevant Codes of Practice}
-
 Professional codes of conduct provide software engineers with an ethical starting point for a deployment of this nature.
 Given the bandwidth of this topic, and the scope of this report, exhaustive coverage of the full documentation is impossible, so key characteristics of differing guidelines will be the primary focal point.
 The BCS focusses on professionals; the IEEE standardises the technological aspects; the ACM is more concerned with societal impact.
 
 \subsection{BCS Code of Conduct}
-%The British Computer Society addresses public interest, professional integrity and professional duty.
-
 BCS members must demonstrate "due regard for public health, privacy, security and wellbeing of others and the environment" \textit{\parencite[p. 2]{BCS2024}}, particularly salient considering Alice will be handling sensitive student data and potentially influencing student wellbeing.
 
-The BCS also mandates professionals to only provide service "within [their] professional competence" \textit{\parencite[p. 2]{BCS2024}} which begs the question: where exists the limit of Alice's 'competence' in the context of student support? Is a system's competency assumed to be an extension of the professionals who calibrated it?
+The BCS also mandates professionals to only provide service "within [their] professional competence" \textit{\parencite[p. 2]{BCS2024}}, which begs the question: where exists the limit of Alice's 'competence' in the context of student support?
+Is a system's competency assumed to be an extension of the professionals who calibrated it?
 
-Members are additionally required to "uphold the reputation of the profession" \textit{\parencite[p. 3]{BCS2024}}. This translates to full transparency regarding Alice's management and capabilities. Safeguards must also be in place to prevent misuse in order to preserve public trust of AI systems in education, let alone the trust of students.
+Members are additionally required to "uphold the reputation of the profession" \textit{\parencite[p. 3]{BCS2024}}.
+This translates to full transparency regarding Alice's management and capabilities.
+Safeguards must also be in place to prevent misuse in order to preserve public trust of AI systems in education, let alone the trust of students.
 
 \subsection{IEEE Code of Ethics}
-
-%The IEEE Code of Ethics are particularly relevant to technological aspects of Alice.
-
 Data retention and deletion policies must be established and clear, ensuring a commitment to "protection of... personal information and data" \textit{\parencite[p. 1]{IEEE2024}}, and a commitment to student privacy.
 Engineers must identify and eliminate potential bias from the model and algorithms in use, such that Alice "not discriminate against any person because of characteristics protected by law" \textit{\parencite[p. 1]{IEEE2024}}.
 This should be verified and assured with rigorous testing and regular audits, ensuring commitment to "honest and realistic... claims or estimates based on available data" \textit{\parencite[p. 2]{IEEE2024}}, coupled with an established mechanism for human oversight and intervention when Alice's confidence in a response is low.
 
 \subsection{ACM Code of Ethics}
-
 The ACM Code proposes that "all people are stakeholders in computing" \textit{\parencite[p. 1]{ACM2024}}, alluding that the enhancement of student wellbeing and academic success is not merely a nice gesture, but necessary for the betterment of society, assuming compliant (and considerate) execution.
-
 
 Alice should be constructed with accessibility in mind, "[fostering] fair participation of all people, including those of underrepresented groups" \textit{\parencite[p. 2]{ACM2024}}.
 
 \subsubsection*{Caveats to Information Processing}
-
 Blundell argues that "such codes are seldom consulted and often incorporate bland (and sometimes contradictory) statements intended to satisfy a broad range of stakeholders" \textit{\parencite[p. 40]{Blundell2020}} and professionals must practise discernment and maintain awareness for the consequences of poor decision-making, both quantitatively and in qualitative aspects.
 Underpinning deontological ethics is the notion that the professional is duty-bound to rely on their better judgement where universally established rules fail.
 This remains one of Kant's core philosophical tenets, to "respect the reason in you".
 
-BCS specifies duty to "due... diligence in accordance with the Relevant Authority's requirements whilst exercising... professional judgement at all times" \textit{\parencite[p. 2]{BCS2024}}. In our context: information relating to the endangerment of any student(s) would likely take precedent over privacy, as is established protocol \textit{In Loco Parentis}.
+BCS specifies duty to "due... diligence in accordance with the Relevant Authority's requirements whilst exercising... professional judgement at all times" \textit{\parencite[p. 2]{BCS2024}}.
+In our context: information relating to the endangerment of any student(s) would likely take precedent over privacy, as is established protocol \textit{In Loco Parentis}.
 This should be at the discretion of human moderators by way of a sophisticated content-flagging system and anonymity secured by multiple key-holders to ensure consensus for de-anonymisation.
 Students may be more comfortable anonymously, so this process of de-anonymising must be abuse-proof to ensure trust remains strong.
 All decision-making processes must prioritise students foremost, with the necessary privacy precautions in place to protect student data alongside regular monitoring of the chatbot's holistic impact on the educational environment.
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% Code of practice      250
-
-% About the AI Chatbot  250
-% Data ethics           500
-% Algorithmic ethics    500
-% Disinformation        250
-% Overall reflection    250
-
 \section{Further Considerations}
 
 \subsubsection*{A Note on Regulatory Standards}
 In-depth representation for truly ethical and compliant practice are appended in Appendix \ref{appendix:b} (relevant definitions with respect to implications for Alice), and not the main body of this report, for brevity's sake.
-
-
-%%ETHICAL TRAINING
-%\subsubsection*{Ethical Training}
-%Providing continuous ethical training for the development team \textit{\parencite{IEEEEthicsCert2024}} should include:
-%\begin{itemize}
-    %\item Regular workshops on AI ethics in education
-    %\item Incorporating ethical considerations into development processes
-%\end{itemize}
 
 \subsection{Ethical Data Governance}
 Any implementation of 'Alice' would raise significant privacy concerns regarding the collection, storage, and use of student data \textit{\parencite[pp. 366-370]{Annus2023}}.
@@ -168,10 +146,10 @@ K-anonymity can be employed for protecting student identities \textit{\parencite
 
 \subsubsection{Data Minimisation}
 Data "audited regularly to ensure all stored information is still relevant" \textit{\parencite{A29WP2018}}, implementing "privacy-preserving UX patterns" \textit{\parencite[pp. 50-100]{Hartzog2023}}, making privacy settings easily accessible and understandable.
+
 \subsubsection*{Informed Consent}
 Information about data usage must be clear, with opt-in mechanisms for non-essential features. Age-appropriate consent must be obtained from students (parental consent for students under the age of 13 \textit{\parencite{FTC2023}}).
 
-\newpage
 \subsection{AI Ethics Principles}
 Adhering to established AI ethics principles \textit{\parencite{EC2024}}.
 
@@ -191,52 +169,26 @@ Explicit labelling of 'Alice' as an AI system \textit{\parencite{IEEE2023}}, inc
 Setting "clear boundaries between AI support and human intervention" \textit{\parencite{APA2024}}by defining thresholds for transitioning between human support and AI. Staff training on effectively working alongside AI systems for smooth integration of technology. This will also enable contextual enquiry to better map student support scenarios, conducting user research \textit{\parencite[pp. 50-100]{Goodman2023}}, and human-in-the-loop dialogue optimisation \textit{\parencite[pp. 30-60]{Vaughan2024}}. Evaluations can be crowdsourced for diverse perspectives.
 
 %%TEST SAMPLE GROUPS OF STUDENTS
-\subsubsection*{Iterative Design Process}
-Implementing an iterative design process \textit{\parencite[pp. 30-60]{HoltzblattBeyer2024}} will aid in refactoring and improving an adaptable system to student needs, and usability testing with representative student groups will ensure that these needs are measured and met.
-
-\subsubsection*{Ethical Review Process}
-Implementing an ethical review process \textit{\parencite{FloridiCowls2023}} includes periodic assessments of chatbot decisions for bias, and alignment checks with established ethical guidelines.
+\subsubsection{Iterative Design Process}
+Implementing an iterative design process \textit{\parencite[pp. 30-60]{HoltzblattBeyer2024}} will aid in the formation of an adaptable system for frequent ethical review \textit{\parencite{FloridiCowls2023}} including periodic assessment of chatbot decisions for bias, and alignment checks with established ethical guidelines. Usability testing with representative student groups will ensure that these needs are measured and met on a regular basis.
 
 \subsubsection{Technical Safety}
-Implementing safeguards against harmful or inappropriate chatbot responses \textit{\parencite[p. e11510]{Bickmore2021}}, safeguarding against jailbreaking and exploitation by students to ensure integrity of all responses. Content filtering and trigger warning systems as well as established escalation protocols for crisis situations. Natural and effective chatbot interactions, establishing tone and personality \textit{\parencite[pp. 20-50]{Bradbury2024}}, maintaining a consistent voice aligned with an educational context, ensuring age-appropriate content.
+Implementing safeguards against harmful or inappropriate chatbot responses \textit{\parencite[p. e11510]{Bickmore2021}}, safeguarding against jailbreaking and exploitation by students to ensure integrity of all responses. Content-filtering and trigger warning systems in effect, with established escalation protocols for crisis situations. Natural and effective chatbot interactions, establishing tone and personality \textit{\parencite[pp. 20-50]{Bradbury2024}}, maintaining a consistent voice aligned with an educational context, ensuring age-appropriate content.
 
 \subsubsection{Transparency}
  "Explainable AI techniques to interpret chatbot decisions" \textit{\parencite[pp. 82-115]{Arrieta2022}} by way of interpretable machine learning models and provision of rationale, with respect to design recommendations in the software lifecycle.
 
 
- \subsubsection{Fairness-Aware Machine Learning}
-Implementing fairness-aware machine learning techniques \textit{\parencite{Barocas2021}} is crucial:
-\begin{itemize}
-    \item Utilising algorithmic fairness metrics (e.g., demographic parity, equal opportunity)
-    \item Applying bias mitigation strategies in model training and deployment
-\end{itemize}
+ \subsubsection*{Fairness-Aware Machine Learning}
+"Fairness-aware machine learning" technology \textit{\parencite{Barocas2021}}, tracking algorithm parity fairness metrics.
+    TechSoft must subsume a mindset for mitigation.
 
-\subsubsection*{Bias Testing}
-Mitigating bias in the chatbot's algorithms is essential for equitable student support:
-Regular testing for biases in chatbot responses \textit{\parencite{ACMFAccT2024}} should include:
-\begin{itemize}
-    \item Employing automated bias detection tools
-    \item Implementing human-in-the-loop evaluation for sensitive topics
-\end{itemize}
+This connotes frequent bias testing in the chatbot's algorithms, essential for equitable student support.
+Regular testing for biases in chatbot responses \textit{\parencite{ACMFAccT2024}} should include the employment of automated bias detection tools in tandem with human-in-the-loop supervised evaluation of litmus tests.
 
-\subsubsection*{Diverse Training Data}
-Using diverse training data to prevent demographic biases \textit{\parencite[pp. 1-35]{Mehrabi2023}} involves:
-\begin{itemize}
-    \item Including diverse student profiles in training datasets
-    \item Regularly updating data to reflect changing student demographics
-\end{itemize}
+Diverse training data, to prevent demographic biases \textit{\parencite[pp. 1-35]{Mehrabi2023}} is important. Diverse student profiles in training data ensure an inclusive model representative of the entire student demographic.
 
-%%TESTING FOR BIAS
-\subsubsection{Regular Audits}
-Conducting regular audits of the chatbot's decision-making processes \textit{\parencite{AIEthicsGuidelines2024}} is essential:
-\begin{itemize}
-    \item Logging and analysis of chatbot interactions
-    \item Third-party audits to ensure adherence to ethical guidelines
-\end{itemize}
-
-\newpage
-
-\subsection{User Experience and Accessibility}
+\subsection{User Experience}
 \subsubsection{User-Centred Design}
 Implementing a design process focussed on student needs:
 
@@ -395,7 +347,7 @@ Fostering research collaboration \textit{\parencite[pp. 50-100]{Dillenbourg2023}
     \item Publishing findings to contribute to the broader field
 \end{itemize}
 
-\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Reflection and Recommendations}
 
 Key recommendations for the 'Alice' project:
@@ -412,6 +364,7 @@ Key recommendations for the 'Alice' project:
 
 \end{multicols}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
 \appendix
 \section{Appendix A: Data Protection Impact Assessment Template}\label{appendix:a}
@@ -606,16 +559,6 @@ Key recommendations for the 'Alice' project:
 "
 
 \textit{\parencite{ICO2024}}
-
-\subsubsection*{Ethics Review Board Oversight}
-"
-\begin{itemize}
-    \item Conducting periodic reviews of chatbot decisions and outcomes
-    \item Establishing stakeholder feedback mechanisms
-\end{itemize}
-"
-
-\textit{\parencite{AIEthicsBoard2024}}
 
 \subsubsection*{Continuous Professional Development}
 "
