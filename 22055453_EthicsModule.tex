@@ -47,12 +47,12 @@
 
 Module Title: UFCFB5-15-3 | Ethical and Professional Issues in Computing and Digital Media
 
-Word Count: 2,056
+Word Count: 2,070
 
 \vspace{3em}
 \hrule
 
-\vspace{3em}
+\vspace{2em}
 \textbf{\Large{Abstract; Executive Summary}}
 
 \begin{center}
@@ -115,7 +115,7 @@ Word Count: 2,056
 
 - Creation of detailed escalation pathways that define precise thresholds for human intervention.
 
-- Accessibility features aligned with WCAG 2.2 standards, including support for diverse learning needs
+- Accessibility features aligned with WCAG 2.2 standards, including support of diverse learning needs.
 
 - Sophisticated natural language processing frameworks that ensure age-appropriate interactions.
 
@@ -125,9 +125,9 @@ Word Count: 2,056
 
 - Audit trails tracking system decisions and human interventions whilst maintaining student anonymity.
 
-- Thorough staff training programmes covering both technical operation and ethical considerations
+- Thorough staff training programmes covering both technical operation and ethical considerations.
 
-- Documentation supporting continuous improvement and knowledge-sharing
+- Documentation supporting continuous improvement and knowledge-sharing.
 
 \vspace{3em}
 \hrule
@@ -204,8 +204,8 @@ All decision-making processes must prioritise students foremost, with the necess
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Further Considerations}
 
-\subsubsection*{A Note on Regulatory Standards}
-In-depth representation for truly ethical and compliant practice are appended in Appendix \ref{appendix:b} (relevant definitions with respect to implications for Alice), and not the main body of this report, for brevity's sake.
+%\subsubsection*{A Note on Regulatory Standards}
+%In-depth representation for truly ethical and compliant practice are appended in Appendix \ref{appendix:b} (relevant definitions with respect to implications for Alice), and not the main body of this report, for brevity's sake.
 
 \subsection{Ethical Data Governance}
 Any implementation of Alice would raise significant privacy concerns regarding the collection, storage, and use of student data \textit{\parencite[pp. 366-370]{Annus2024}}. In the best interest of both students and the law, all-encompassing singular actions, policies, and processes have the potential to satisfy the needs of all stakeholders simultaneously.
@@ -227,18 +227,17 @@ Data encryption \textit{\parencite[pp. 100-150]{Stallings2024}}, AES-256 for dat
 K-anonymity employed for protecting student identities \textit{\parencite[pp. 75-100]{ElEmamArbuckle2024}}, and the implementation of differential privacy for aggregate data analysis, anonymising students entirely into statistics beneficial for upgrading and improving the chatbot, and alleviating the burden of at-risk data unnecessary for development purposes.
 
 \subsubsection{Data Minimisation}
-Students being vulnerable persons, data minimisation is crucial.
-Information about data usage must be clear, with informed consent for all users/guardians concerned.
+Information about data usage must be clear, facilitating informed consent.
 The EU mandates that "only the minimum amount of personal data necessary for each specific purpose of processing should be processed" \textit{\parencite{EU2016}}.
-In the context of the education of minors, it is even more vital to ensure that data is only collected when necessary, and that it is stored securely and "audited regularly to ensure all stored information is still relevant" \textit{\parencite{A29WP2018}}, implementing "privacy-preserving UX patterns" \textit{\parencite[pp. 50-100]{Hartzog2024}}, making privacy settings easily accessible and understandable.
+The potential consequences of over-collection include breach of rights while under-collection poses the risk of stagnation - a significantly more managable dilemma.
+One key challenge will be defining what `minimum necessary' data entails.
+In this context, it is even more vital to ensure that data is only collected when necessary, and that it is stored securely and "audited regularly to ensure all stored information is still relevant" \textit{\parencite{A29WP2018}}, implementing "privacy-preserving UX patterns" \textit{\parencite[pp. 50-100]{Hartzog2024}}, making privacy settings easily accessible and understandable.
 There will be no equivalent mitigation for breaches of trust, so it is of paramount importance that TechSoft maintain a high standard of data governance.
 
 \subsection{AI Ethics Principles}
-Principled practice is a must, adhering to established AI ethics principles \textit{\parencite{EC2024}}:
-
-\subsubsection{Ethical Algorithm Design}
 Explicit labelling of Alice as an AI system \textit{\parencite{IEEE2024}}, prioritising the elucidation of users.
 Understanding algorithmic configuration choices and their consequences can benefit not only developers, but users, and by extension society en masse.
+Principled practice is a must, adhering to established AI ethics principles \textit{\parencite{EC2024}}:
 
 \subsubsection{Human Agency and Oversight}
 
@@ -256,14 +255,11 @@ Content-filtering in effect, with established escalation protocols for disinform
 Natural and effective chatbot interactions, establishing tone and personality \textit{\parencite[pp. 20-50]{Bradbury2024}}, maintaining a consistent voice aligned with an educational context, ensuring age-appropriate content.
 Harmful or inappropriate chatbot responses \textit{\parencite[p. e11510]{Bickmore2021}} accounted for.
 
-\subsubsection{Transparency}
+\subsubsection{Fairness-Aware Transparency}
  "Explainable AI techniques to interpret chatbot decisions" \textit{\parencite[pp. 82-115]{Arrieta2022}} thanks to interpretable machine learning models and provision of rationale, with respect to design recommendations in the software lifecycle.
-
-
- \subsubsection{Fairness-Aware Machine Learning}
 "Fairness-aware machine learning" technology \textit{\parencite{Barocas2021}}, tracking algorithm parity fairness metrics.
     TechSoft must subsume a mindset for mitigation: frequent bias testing, essential for equitable support.
-Regular bias testing \textit{\parencite{ACMFAccT2024}} including the employment of automated bias-detection tools, in tandem with supervised evaluation.
+%Regular bias testing \textit{\parencite{ACMFAccT2024}} including the employment of automated bias-detection tools, in tandem with supervised evaluation.
 
 Diverse training data, to prevent demographic biases \textit{\parencite[pp. 1-35]{Mehrabi2024}} is important.
 Diverse student profiles in training data ensure an inclusive model representative of the entire student demographic.
@@ -278,7 +274,7 @@ Adhering to WCAG 2.2 \textit{\parencite{W3C2024}}, content can be perceivable, o
 Cognitive accessibility \textit{\parencite[pp. 1-10]{Yesilada2024}} with clear and simple language, alongside multi-lingual options \textit{\parencite[pp. 50-100]{AnastasiouSchaler2024}} provides consistent layout and interaction patterns.
 
 \subsubsection{User-Centred Design}
-An adaptable user interface \textit{\parencite[pp. 20-50]{HarperYesilada2024}}, offering customisable font sizes and colour contrasts supporting a range of input (text, voice, video, gestures), and optionally reducing visual clutter to address neurodiversity \textit{\parencite[pp. 30-60]{Armstrong2024}} will accommodate special needs.
+An adaptable user interface \textit{\parencite[pp. 20-50]{HarperYesilada2024}}, offering customisable font sizes and colour contrasts supporting a range of input (text, voice, video, gestures), and reducing visual clutter to address neurodiversity \textit{\parencite[pp. 30-60]{Armstrong2024}}, accommodating special needs.
 
 \subsubsection{Dark Pattern Avoidance}
 Dark patterns \textit{\parencite{Brignull2024}} must be avoided.
@@ -290,7 +286,7 @@ This includes also addressing attention economy concerns \textit{\parencite[pp. 
 This is vital in the context of impressionable and susceptible youth and vulnerable persons.
 
 \subsubsection{Psychological Impact}
-AI Support is liable to psychological impacts as well and these must be considered  too.
+%AI Support is liable to psychological impacts as well and these must be considered  too.
 TechSoft must mitigate the risk of over-reliance on AI for emotional support \textit{\parencite[p. 746]{Miner2022}}, clearly communicating AI's role as a supplement to (not replacement for) human support.
 Pre-existing human counselling services can be integrated facilitating non-AI support roles.
 
@@ -319,15 +315,17 @@ Sentiment analysis \textit{\parencite[pp. 50-100]{Liu2024}} can be performed, an
 
 \section{Reflection and Recommendations}
 Throughout the software development lifecycle, encapsulated here: "privacy by design" from the foundation, with "human-centric AI" as a guiding principle to instill responsibility and a "mindset for mitigation."
-This means optimising for ethical best practice from the foundation up: informed consent built-in, training for all staff, and ultimately assisting the existing school culture to care for students and venerating this ethos above all else.
-With ethos-driven targets permeating every aspect of its implementation, Alice must also exemplify educational empowerment for cognitive stewardship, empowering students, educators, and support workers alike.
+This means optimising for ethical best practice from the foundation up: informed consent built-in, training for all staff, and ultimately assisting the existing school culture to care for students, venerating this ethos above all else.
 
-This can only be achieved through strict data handling, management, audit procedures etc. TechSoft must devise training such that it enables staff to work effectively alongside AI systems, as opposed to in lieu, or in spite, of them, all the while upholding accountability as a virtue.
-Transparency can ensure TechSoft a model for "responsible innovation" in educational AI, forming a beneficial relationship amongst a sensitive and valued ecology of academia.
+With ethos-driven targets permeating every aspect of its implementation, Alice must also exemplify educational empowerment for cognitive stewardship, empowering students, educators, and support workers alike. Engineers will have to balance competing priorities effectively (accessibility versus security, privacy versus functionality, etc.)
+
+This can only be achieved through strict data handling, management, and audit procedures. TechSoft must devise training enabling of staff to work effectively alongside AI systems, as opposed to in lieu, or in spite, of them, all the while upholding accountability as a virtue.
+Transparency can ensure TechSoft a model for "responsible innovation" in educational AI amongst a sensitive and valued ecology of academia.
 
 In combination with adaptive and continuous evaluation, TechSoft can assure a system that truly serves its mission while protecting student interests, prioritising students foremost and catering to diverse student needs.
 Complete and maintain an updated Data Protection Impact Assessment, filing and refactoring it according to a robust change policy.
-Compliance, accessibility, and effectiveness will converge naturally through thoughtful design choices to establish a sensible and proactive ethical framework and governance structure.
+
+Compliance, accessibility, and effectiveness will converge naturally through thoughtful design choices to establish a sensible, successful, and proactive ethical framework and governance structure.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
