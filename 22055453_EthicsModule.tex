@@ -33,7 +33,7 @@
 \fancyhf{}
 \renewcommand{\headrulewidth}{0.4pt}
 \renewcommand{\footrulewidth}{0.4pt}
-\fancyhead[L]{TechSoft Internal Report: Ethical Considerations for Development of `Alice'}
+\fancyhead[L]{TechSoft Internal Report: Ethical Considerations for Development of Alice}
 \fancyhead[R]{Page \thepage}
 \fancyfoot[C]{\thepage}
 
@@ -47,7 +47,7 @@
 
 Module Title: UFCFB5-15-3 | Ethical and Professional Issues in Computing and Digital Media
 
-Word Count: 2,048
+Word Count: 2,056
 
 \vspace{3em}
 \hrule
@@ -90,24 +90,24 @@ Given the bandwidth of this topic, and the scope of this report, exhaustive cove
 The BCS focusses on professionals; the IEEE standardises the technological aspects; the ACM is more concerned with societal impact.
 
 \subsection{BCS Code of Conduct}
-BCS members must demonstrate "due regard for public health, privacy, security and wellbeing of others and the environment" \textit{\parencite[p. 2]{BCS2024}}, particularly salient considering `Alice' will be handling sensitive student data and potentially influencing student wellbeing.
+BCS members must demonstrate "due regard for public health, privacy, security and wellbeing of others and the environment" \textit{\parencite[p. 2]{BCS2024}}, particularly salient considering Alice will be handling sensitive student data and potentially influencing student wellbeing.
 
-The BCS also mandates professionals to only provide service "within [their] professional competence" \textit{\parencite[p. 2]{BCS2024}}, which begs the question: where exists the limit of `Alice''s 'competence' in the context of student support?
+The BCS also mandates professionals to only provide service "within [their] professional competence" \textit{\parencite[p. 2]{BCS2024}}, which begs the question: where exists the limit of Alice's `competence' in the context of student support?
 Is a system's competency assumed to be an extension of the professionals who calibrated it?
 
 Members are additionally required to "uphold the reputation of the profession" \textit{\parencite[p. 3]{BCS2024}}.
-This translates to full transparency regarding `Alice''s management and capabilities.
+This translates to full transparency regarding Alice's management and capabilities.
 Safeguards must also be in place to prevent misuse in order to preserve public trust of AI systems in education, let alone the trust of students.
 
 \subsection{IEEE Code of Ethics}
 Data retention and deletion policies must be established and clear, ensuring a commitment to "protection of... personal information and data" \textit{\parencite[p. 1]{IEEE2024}}, and a commitment to student privacy.
-Engineers must identify and eliminate potential bias from the model and algorithms in use, such that `Alice' "not discriminate against any person because of characteristics protected by law" \textit{\parencite[p. 1]{IEEE2024}}.
-This should be verified and assured with rigorous testing and regular audits, ensuring commitment to "honest and realistic... claims or estimates based on available data" \textit{\parencite[p. 2]{IEEE2024}}, coupled with an established mechanism for human oversight and intervention when `Alice''s confidence in a response is low.
+Engineers must identify and eliminate potential bias from the model and algorithms in use, such that Alice "not discriminate against any person because of characteristics protected by law" \textit{\parencite[p. 1]{IEEE2024}}.
+This should be verified and assured with rigorous testing and regular audits, ensuring commitment to "honest and realistic... claims or estimates based on available data" \textit{\parencite[p. 2]{IEEE2024}}, coupled with an established mechanism for human oversight and intervention when Alice's confidence in a response is low.
 
 \subsection{ACM Code of Ethics}
 The ACM Code proposes that "all people are stakeholders in computing" \textit{\parencite[p. 1]{ACM2024}}, alluding that the enhancement of student wellbeing and academic success is not merely a nice gesture, but necessary for the betterment of society, assuming compliant (and considerate) execution.
 
-`Alice' should be constructed with accessibility in mind, "[fostering] fair participation of all people, including those of underrepresented groups" \textit{\parencite[p. 2]{ACM2024}}.
+Alice should be constructed with accessibility in mind, "[fostering] fair participation of all people, including those of underrepresented groups" \textit{\parencite[p. 2]{ACM2024}}.
 
 \subsubsection*{Caveats to Information Processing}
 Blundell argues that "such codes are seldom consulted and often incorporate bland (and sometimes contradictory) statements intended to satisfy a broad range of stakeholders" \textit{\parencite[p. 40]{Blundell2020}} and professionals must practise discernment and maintain awareness for the consequences of poor decision-making, both quantitatively and in qualitative aspects.
@@ -125,10 +125,10 @@ All decision-making processes must prioritise students foremost, with the necess
 \section{Further Considerations}
 
 \subsubsection*{A Note on Regulatory Standards}
-In-depth representation for truly ethical and compliant practice are appended in Appendix \ref{appendix:b} (relevant definitions with respect to implications for `Alice'), and not the main body of this report, for brevity's sake.
+In-depth representation for truly ethical and compliant practice are appended in Appendix \ref{appendix:b} (relevant definitions with respect to implications for Alice), and not the main body of this report, for brevity's sake.
 
 \subsection{Ethical Data Governance}
-Any implementation of `Alice' would raise significant privacy concerns regarding the collection, storage, and use of student data \textit{\parencite[pp. 366-370]{Annus2024}}. In the best interest of both students and the law, all-encompassing singular actions, policies, and processes have the potential to satisfy the needs of all stakeholders simultaneously.
+Any implementation of Alice would raise significant privacy concerns regarding the collection, storage, and use of student data \textit{\parencite[pp. 366-370]{Annus2024}}. In the best interest of both students and the law, all-encompassing singular actions, policies, and processes have the potential to satisfy the needs of all stakeholders simultaneously.
 Proper management of data involves:
 
 \subsubsection{GDPR/Regulatory Compliance}
@@ -147,17 +147,14 @@ Data encryption \textit{\parencite[pp. 100-150]{Stallings2024}}, AES-256 for dat
 K-anonymity employed for protecting student identities \textit{\parencite[pp. 75-100]{ElEmamArbuckle2024}}, and the implementation of differential privacy for aggregate data analysis, anonymising students entirely into statistics beneficial for upgrading and improving the chatbot, and alleviating the burden of at-risk data unnecessary for development purposes.
 
 \subsubsection{Data Minimisation}
-Data "audited regularly to ensure all stored information is still relevant" \textit{\parencite{A29WP2018}}, implementing "privacy-preserving UX patterns" \textit{\parencite[pp. 50-100]{Hartzog2024}}, making privacy settings easily accessible and understandable.
-
-\subsubsection{Informed Consent}
-Information about data usage must be clear, with opt-in mechanisms for non-essential features.
-Age-appropriate consent must be obtained from students (parental consent for students under the age of 13 \textit{\parencite{FTC2024}}).
+Information about data usage must be clear, with opt-in mechanisms for non-essential features and informed consent for all users/guardians concerned.
+In the context of students, it is vital to ensure that data is only collected when necessary, and that it is stored securely and "audited regularly to ensure all stored information is still relevant" \textit{\parencite{A29WP2018}}, implementing "privacy-preserving UX patterns" \textit{\parencite[pp. 50-100]{Hartzog2024}}, making privacy settings easily accessible and understandable.
 
 \subsection{AI Ethics Principles}
 Principled practice is a must, adhering to established AI ethics principles \textit{\parencite{EC2024}}:
 
 \subsubsection{Ethical Algorithm Design}
-Explicit labelling of `Alice' as an AI system \textit{\parencite{IEEE2024}}, prioritising the elucidation of users.
+Explicit labelling of Alice as an AI system \textit{\parencite{IEEE2024}}, prioritising the elucidation of users.
 Understanding algorithmic configuration choices and their consequences can benefit not only developers, but users, and by extension society en masse.
 
 \subsubsection{Human Agency and Oversight}
@@ -195,14 +192,14 @@ TechSoft must commit to a design process focussed on student needs:
 \subsubsection{Accessibility Standards}
 Adhering to WCAG 2.2 \textit{\parencite{W3C2024}}, content can be perceivable, operable, understandable, and considerate of an array of user interaction.
 
-Cognitive accessibility \textit{\parencite[pp. 1-10]{Yesilada2024}} with clear and simple language, alongside multi-lingual options \textit{\parencite[pp. 50-100]{AnastasiouSchaler2023}} provides consistent layout and interaction patterns.
+Cognitive accessibility \textit{\parencite[pp. 1-10]{Yesilada2024}} with clear and simple language, alongside multi-lingual options \textit{\parencite[pp. 50-100]{AnastasiouSchaler2024}} provides consistent layout and interaction patterns.
 
 \subsubsection{User-Centred Design}
 An adaptable user interface \textit{\parencite[pp. 20-50]{HarperYesilada2024}}, offering customisable font sizes and colour contrasts supporting a range of input (text, voice, video, gestures), and optionally reducing visual clutter to address neurodiversity \textit{\parencite[pp. 30-60]{Armstrong2024}} will accommodate special needs.
 
 \subsubsection{Dark Pattern Avoidance}
 Dark patterns \textit{\parencite{Brignull2024}} must be avoided.
-Operational transparency including information about `Alice' and data usage, with clear opt-out options for data collection are of utmost importance.
+Operational transparency including information about Alice and data usage, with clear opt-out options for data collection are of utmost importance.
 Information pertinent to students and their rights must be made crystal clear.
 
 \subsubsection{Attention Economy Awareness}
@@ -239,9 +236,10 @@ Sentiment analysis \textit{\parencite[pp. 50-100]{Liu2024}} can be performed, an
 
 \section{Reflection and Recommendations}
 Throughout the software development lifecycle, encapsulated here: "privacy by design" from the foundation, with "human-centric AI" as a guiding principle to instill responsibility and a "mindset for mitigation."
-With ethos-driven targets permeating every aspect of its implementation, `Alice' must also exemplify educational empowerment for cognitive stewardship.
+This means optimising for ethical best practice from the foundation up: informed consent built-in, training for all staff, and ultimately assisting the existing school culture to care for students and venerating this ethos above all else.
+With ethos-driven targets permeating every aspect of its implementation, Alice must also exemplify educational empowerment for cognitive stewardship, empowering students, educators, and support workers alike.
 
-Devise training for staff to work effectively alongside AI systems, not in lieu of them, all the while maintaining accountability as protocol.
+This can only be achieved through strict data handling, management, audit procedures etc. TechSoft must devise training such that it enables staff to work effectively alongside AI systems, as opposed to in lieu, or in spite, of them, all the while upholding accountability as protocol.
 Transparency can ensure TechSoft a model for "responsible innovation" in educational AI and amongst a sensitive and valued ecology of academia.
 Compliance, accessibility, and effectiveness will converge naturally through thoughtful design choices to establish a sensible and proactive ethical framework and governance structure.
 
